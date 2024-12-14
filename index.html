@@ -3,17 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Jasmin's Workout App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-dark text-light d-flex flex-column">
-    <div class="container d-flex flex-column justify-content-around mb-3" id="main-container">
+    <div class="container d-flex flex-column justify-content-around mb-3 text-warning" id="main-container">
         <div class="title-callout d-flex justify-content-center align-items-center gap-2">
             <h1>Jasmin's Workout App</h1>
             <i class="fa-solid fa-dumbbell"></i>
         </div>
         <p class="h4 text-center">Choose a workout to get started:</p>
+
+        <div class="inputs w-50 mx-auto">
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent text-warning" id="basic-addon1">Sets</span>
+            <input type="text" class="form-control bg-transparent text-warning" aria-label="Desired Sets" aria-describedby="basic-addon1" id="sets">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent text-warning" id="basic-addon1">Reps</span>
+            <input type="text" class="form-control bg-transparent text-warning" aria-label="Desired Reps" aria-describedby="basic-addon1" id="reps">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text bg-transparent text-warning" id="basic-addon1">No. of Exercises - (Max 15)</span>
+            <input type="text" class="form-control bg-transparent text-warning" placeholder="Exercises" aria-label="Number of Exercises" aria-describedby="basic-addon1" id="exercises">
+          </div>
+        </div>
 
         <div class="workout-options d-flex flex-column justify-content-around gap-5 mt-5 mx-5">
             <button type="button" class="btn btn-outline-warning" id="button-1">UPPER BODY</button>
@@ -23,8 +38,6 @@
 
     </div>
 
-    
-        
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bd47ea96a8.js" crossorigin="anonymous"></script>
