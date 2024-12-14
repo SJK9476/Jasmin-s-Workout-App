@@ -4,6 +4,7 @@ const mainContainer = document.getElementById("main-container");
 const button1 = document.getElementById("button-1");
 const button2 = document.getElementById("button-2");
 const button3 = document.getElementById("button-3");
+const returnHome = document.getElementById("return-home");
 
 button1.addEventListener("click", () => {
     renderExercises(upperBodyExercises);
@@ -16,6 +17,7 @@ button2.addEventListener("click", () => {
 button3.addEventListener("click", () => {
     renderExercises(fullBodyExercises);
 });
+
 
 function renderExercises(exercises) {
     mainContainer.innerHTML = "";
@@ -47,4 +49,13 @@ function renderExercises(exercises) {
         </div>`
 
     });
+
+    mainContainer.innerHTML += `
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=".">Return Home</a>
+            </li>
+        </ul>
+    `
 }
+
